@@ -12,8 +12,8 @@ class Solution {
         int tempval= node.next.val;
         node.next.val=node.val;
         node.val =tempval;
-        //deleting next node val
-        ListNode temp= node.next.next;
+        // now we have access of prev node, current node, next node
+        // remove link for node to be deleted. (node.next is node to be deleted after                 swapping)
         node.next= node.next.next;
     }
 }
